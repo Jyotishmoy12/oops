@@ -4,11 +4,15 @@ using namespace std;
 
 class Hero
 {
-    public:
+    private:
     //property
      int health;
-     private:
+     public:
      char level;
+     void print(){
+        cout<<level<<endl;
+     }
+
 };
 
 int main()
