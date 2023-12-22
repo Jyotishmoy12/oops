@@ -30,13 +30,13 @@ class Hero
 int main()
 {
     // creating an object
-    Hero ramesh; 
-    cout<<"size of ramesh: "<<sizeof(ramesh)<<endl;
-    ramesh.sethealth(70); // setter should be void funtion with one argument
-    ramesh.level='A';
-    cout<<"Ramesh ki level: "<<ramesh.gethealth()<<endl; // getter should return something but it has no arguments
-    cout<<"level is: "<<ramesh.level<<endl;
-
+    // dynamic object
+   Hero*b=new Hero;
+   b->setLevel('A');
+   (*b).sethealth(100);
+   cout<<(*b).level<<endl;
+   cout<<(*b).gethealth()<<endl;
+//    cout<<sizeof(b)<<endl; 
 
     return 0;
 }
